@@ -6,7 +6,7 @@ import {FaPinterest} from "react-icons/fa"
 import darkLine from "../images/darkLine.svg"
 import logo from "../images/logo.svg"
 import call from "../images/call.svg"
-import icon from "../images/icon.svg"
+import icon from "../images/Icon.svg"
 import email from "../images/email.svg"
 import shorterLine from "../images/shorterLine.svg"
 import { Link } from 'react-scroll'

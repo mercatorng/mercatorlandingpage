@@ -11,7 +11,7 @@ const OurTeam = () => {
         <div className='text-center'>
             {/* header  */}
      <article>
-      <h1 className='text-3xl sms:text-4xl font-700'>Our Creative Team</h1>
+      <h1 className='text-3xl sms:text-4xl font-700'>Seasoned Leadership</h1>
       <p className='text-greyText mt-4 px-5 smd:max-w-[29rem] sms:max-w-[33rem] smax:max-w-[40rem] mx-auto '>Our team is made up of seasoned financial and payment technology professionals that have deployed solutions at the highest levels in the Nigerian Financial and Payments Industry.</p>
       </article>
       </div>
