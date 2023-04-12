@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.hero {
+    background: 
+      url("../src/images/Background Image.svg") center/cover no-repeat;
+      /* display:flex; */
+      
+  }
+
+.flexy{
+  display: flex;
+  items-center: center;
+}
+
+.bg {
+    background:linear-gradient(0deg, rgba(35, 34, 51, .8), rgba(35, 34, 51, .8)),
+      
+      url("../src/images/ownCompanies.jpg") center/cover no-repeat;
+  }
+
+  .grid{
+     display: grid;
+    place-items: center;
+  }
+  .height{
+    line-height: 1.2rem;
+  }
+  .mt{
+    margin-top: 3rem
+  }
+
+  .inset {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform : translate(-50%, -50%)
+  }
+
+  .inseti {
+ position: absolute;
+    top:70%;
+    left: 50%;
+    transform : translate(-50%, -50%)
+  }
+  /* }
+  .carousel{
+  padding:2rem;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  .box{
+    height: 100px;
+    color: red
+  }
+  @media screen and (min-width:1170px){
+.slick-next {
+  transform: translate(260%, -50%);
+}
+.slick-prev {
+  transform: translate(-260%, -50%);
+}
+  }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: button;
+  background-color: white;
+  background-image: none;
+}
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 50px;
+  line-height: 1;
+  opacity: 1;
+  color: #5956E9 ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: -8rem
+}
+ */
+
+ .swiper {
+  width: 100%;
+  height:60vh;
+}
+
+ .swiper-pagination {
+  position: absolute;
+  /* transform: translate(0, 20%); */
+ }
+ .swiper-pagination-bullet-active{
+  background-color: #5956E9 !important;
+ }
+ @media screen and (max-width: 480px) {
+  .btn {
+    transform: translate(0, 90%)
+  }
+ }
+ @media screen and (min-width: 480px) {
+.swiper {
+    height: 23rem
+  }
+ }
+ 
+ /* @media screen and (max-width:680px){
+  .swiper {
+    height: 29rem
+  }
+ } */
+ @media screen and (min-width:681px){
+  .swiper{
+    height:24rem;
+  }
+ }
+
+ .transition {
+  transition: all .2s linear;
+}
+ .transitioni {
+  transition: all .8s ease-out;
+
+}
+
+.bgModal {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
