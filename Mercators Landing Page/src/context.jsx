@@ -43,7 +43,7 @@ const sendEmail = (e) => {
     setName("")
     setEmail("")
     setMessage("")
-    emailjs.sendForm('service_2qcerav', 'template_o4zvcnq', form.current, 'EP4zj8O_xCVtbhDEd')
+    emailjs.sendForm('service_h5inqlr', 'template_pv6rrrd', form.current, 'jAsy_egLMBP-u_NF4')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
