@@ -34,7 +34,7 @@ export const customers = [
 
 export const companies = [
     {id:1, companyName: "PAVILION" , info :"Pavilion provide Payment Software and Infrastructure for Financial Institutions in Africa that are tailored uniquely for their environment...", logo:pavilion  },
-    {id:2, companyName: "LOYALBAZE" , info :"A Loyalty and Customer Engagement Platform with an Embedded Payment System that allows businesses to create custom loyalty programs for their customers...", logo:loyalbaze  },
+    {id:2, companyName: "LOYALBAZE" , info :"A Loyalty and Customer Engagement Platform with an Embedded Payment System that allows businesses to create custom loyalty programs for their customers..", logo:loyalbaze  },
     {id:3, companyName: "GROUPY" , info :"Groupy is a community based digital banking platform. We provide financial products that are tailored to the needs of communities in Africa...", logo:groupy  },
     {id:4, companyName: "MIIT" , info :"Mercator Institute of Information Technology is a Fintech Focused Technology Training Institute that provides a steady pipeline of ready to hit the ground running tech talents to Financial Institutions", logo:miit  },
     {id:5, companyName: "PAY SIMPLE" , info :"Paysimple is a One stop platform for SMES - banking, payments, operations all in one integrated platforms for businesses etc", logo:paySimple  },
