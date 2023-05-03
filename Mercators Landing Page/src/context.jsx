@@ -1,5 +1,7 @@
 import React, { useState, useContext , useRef} from 'react'
 import emailjs from '@emailjs/browser';
+import axios from "axios"
+const url = 'https://mercatorapiservices.com/api/Message/Send'
 
 export const AppContext = React.createContext()
 
@@ -35,7 +37,7 @@ const messageClose = () => {
   };
 
 
-const sendEmail = (e) => {
+const sendEmail = async(e) => {
     e.preventDefault();
   console.log(name);
     if (name && email && message) {
@@ -43,18 +45,25 @@ const sendEmail = (e) => {
     setName("")
     setEmail("")
     setMessage("")
-    emailjs.sendForm('service_h5inqlr', 'template_pv6rrrd', form.current, 'jAsy_egLMBP-u_NF4')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-    }
-    
+    try {
+      const resp = await axios.post(url, {
+       to: [
+         "Connect@mercator.ng"
+       ],
+      subject: "Message From Mercator Website",
+       message:`<p>name:${name}</p> <p>email:${email}</p> <p><b>message:${message}</p></b>`, 
+       from: "noreply@mercator.ng",
+       senderName: "Mercator",
+      })
+      console.log(resp.data);
+   }catch(error){
+    console.log(error.response);
+   }
   };
+}
 
 
-    return <AppContext.Provider value={{modalOpen, openModal, closeModal, menuClick, openMessage,name,email, message, changeEmail, changeMessage, changeName, sendEmail, form, messageClose}}>
+    return <AppContext.Provider value={{modalOpen, openModal, closeModal, menuClick, openMessage,name,email, message, changeEmail, changeMessage, changeName, sendEmail, messageClose}}>
        {children}
     </AppContext.Provider>
 }

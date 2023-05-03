@@ -1,10 +1,15 @@
 import React, { useRef } from 'react'
 import { useGlobalContext } from '../context';
+import axios from 'axios';
 
+const url = 'https://mercatorapiservices.com/api/Message/Send'
 const ContactUs = () => {
-  const { email, name, message, changeEmail, changeName, changeMessage, sendEmail, form  } = useGlobalContext()
+  const { email, name, message, changeEmail, changeName, changeMessage, sendEmail} = useGlobalContext()
   
+//  const sendEmail =async(e)=>{
+//     e.preventDefault()
 
+//  }
  
   return (
     <div className='hero '>
@@ -18,7 +23,7 @@ can drop a message, we will respond as soon as possible.
 Fill the form to drop a message with us.</p>
 
     {/* form-center  */}
-    <form className='mt-5 ' ref={form} onSubmit={sendEmail} >
+    <form className='mt-5 ' onSubmit={sendEmail} >
         {/* input  */}
        <div>
       <input type="text" name='user_email' value={email} onChange={changeEmail} placeholder='Email address' className='w-[80%] max-w-[600px] p-[.35rem] pl-5 rounded-md focus:outline-none' />
