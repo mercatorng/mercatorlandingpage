@@ -11,6 +11,7 @@ import loyalbaze from "./images/loylabaze.svg";
 import groupy from "./images/groupy.svg";
 import miit from "./images/miit.svg";
 import paySimple from "./images/miit.svg";
+import coreInfraIcon from "./assets/coreInfraIcon.svg";
 
 import oliverJohson from "./images/oliverJohnson.svg";
 import ukamba from "./images/ukamba.svg";
@@ -40,7 +41,7 @@ export const companies = [
     id: 6,
     companyName: "CoreInfra",
     info: "CoreInfra helps financial institutions to modernize their core payment infrastructure. With years of experience and passion for innovation, we have delivered many industry first solutions that drive growth and increase efficiency",
-    logo: pavilion,
+    logo: coreInfraIcon,
   },
   {
     id: 2,
