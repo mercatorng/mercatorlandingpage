@@ -48,7 +48,7 @@ const NavBar = () => {
                </div>
                {/* end of email  */}
                {/* call  */}
-               <div className='flex gap-x-2'>
+               <div className='flex gap-x-2 w-full'>
                <img src={call} alt="email" />
                <p className='text-white'>+234 903 618 9485</p>
                </div>
